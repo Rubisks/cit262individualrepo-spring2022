@@ -1,2 +1,3 @@
 # cit262individualrepo-spring2022
-class cit 262
+DevOps Projects and code examples
+
