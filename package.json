@@ -1,0 +1,22 @@
+{
+  "name": "cit262individualrepo-spring2022",
+  "version": "1.0.0",
+  "description": "DevOps Projects and code examples",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rubisks/cit262individualrepo-spring2022.git"
+  },
+  "author": "-y",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Rubisks/cit262individualrepo-spring2022/issues"
+  },
+  "homepage": "https://github.com/Rubisks/cit262individualrepo-spring2022#readme",
+  "dependencies": {
+    "mocha": "^9.2.2"
+  }
+}
