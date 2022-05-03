@@ -15,4 +15,3 @@ const login = async ({userName, password}) => {
 }
 
 export {login};
-export {login};
