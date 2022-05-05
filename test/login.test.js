@@ -6,5 +6,5 @@ it ('should get login token', async ()=>{
         password:"M@ckB00k",
     }
     await login(loginRequest);
-    
+
 })
