@@ -1,19 +1,19 @@
 steps:
 #this step builds the container image.
   - name: "gcr.io/cloud-builders/docker"
-    id: build
+    id: Build
     args:
       - "build"
       - "-t"
       - "gcr.io/$PROJECT_ID/stedi-tests-tucker:latest"
       - "."
   - name: "gcr.io/cloud-builders/docker"
-    id: push
+    id: Push
     args:
       - "push"
       - "gcr.io/$PROJECT_ID/stedi-tests-tucker:latest"
   - name: "gcr.io/cloud-builders/docker"
-    id: run
+    id: Run
     args:
       - "run"
       - "gcr.io/$PROJECT_ID/stedi-tests-tucker:latest"
