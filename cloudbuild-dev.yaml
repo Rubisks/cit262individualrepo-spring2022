@@ -12,11 +12,6 @@ steps:
     args:
       - "push"
       - "gcr.io/$PROJECT_ID/stedi-test-tucker:latest"
-      
-
-
-
-
 
 
 
