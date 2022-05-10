@@ -12,6 +12,11 @@ steps:
     args:
       - "push"
       - "gcr.io/$PROJECT_ID/stedi-tests-tucker:latest"
+  - name: "gcr.io/cloud-builders/docker"
+    id: run
+    args:
+      - "run"
+      - "gcr.io/$PROJECT_ID/stedi-tests-tucker:latest"
 
 
 
