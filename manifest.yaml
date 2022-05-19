@@ -17,8 +17,8 @@ spec:
       containers:
         - name: tucker-stedi
           image: gcr.io/teca-350016/stedi-tucker:latest
-          command: ("npm")
-          args: ("run", "start")
+          command: ["npm"]
+          args: ["run", "start"]
           ports:
             - containerPort: 3000
           resources:
