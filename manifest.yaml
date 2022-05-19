@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: tucker-stedi
-          image: gcr.io/$PROJECT_ID/stedi-tests-tucker:latest
+          image: gcr.io/teca-350016/stedi-tucker:latest
           ports:
             - containerPort: 3000
           resources:
