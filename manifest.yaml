@@ -24,11 +24,11 @@ spec:
               cpu: ".5"
               memory: "500Mi"
             requests:
-              cpu: ".35"
-              memory: "350Mi"
+              cpu: ".25"
+              memory: "250Mi"
           livenessProbe:
             httpGet:
               path: /
-              port: 3000
+              port: 4567
             initialDelaySeconds: 3
             periodSeconds: 3
