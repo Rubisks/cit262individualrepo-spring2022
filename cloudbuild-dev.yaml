@@ -17,7 +17,7 @@ steps:
     id: Deploy
     args:
     - run
-    - --fiilename=manifest.yaml
+    - --filename=manifest.yaml
     - --image=gcr.io/$PROJECT_ID/stedi-tucker:latest
     - --location=us=east1-c
     - --output=/tmp/outputdev
