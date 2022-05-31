@@ -12,6 +12,17 @@ steps:
     args:
       - "push"
       - "gcr.io/$PROJECT_ID/stedi-tucker:latest"
+
+  - name: "gcr.io/cloud-builders/gke-deploy"
+    id: Deploy
+    args:
+    - run
+    - --fiilename=manifest.yaml
+    - --image=gcr.io/$PROJECT_ID/stedi-tucker:latest
+    - --location=us=east1-c
+    - --output=/tmp/outputdev
+    - --cluster=cluster-2
+
   - name: "gcr.io/cloud-builders/docker"
     id: Run
     args:
