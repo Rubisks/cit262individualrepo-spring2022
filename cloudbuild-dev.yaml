@@ -19,7 +19,7 @@ steps:
     - run
     - --filename=manifest.yaml
     - --image=gcr.io/$PROJECT_ID/stedi-tucker:latest
-    - --location=us=east1-c
+    - --location=us-east1-c
     - --output=/tmp/outputdev
     - --cluster=cluster-2
 
