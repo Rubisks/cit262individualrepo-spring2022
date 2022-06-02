@@ -8,7 +8,7 @@ const login = async ({userName, password}) => {
         headers:{'Content-Type':'application/json'}
     };
 
-    const apiResponse = await fetch('https://dev.stedi.me/login',options);
+    const apiResponse = await fetch('http://35.243.132.37 ',options);
     const loginResponse = await apiResponse.text();
 
     return loginResponse;
