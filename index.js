@@ -4,16 +4,16 @@ const application = express();
 
 application.use(bodyParser.json());
 
-application.post('/login', (loginRequest,loginResponce)=>{
+application.post('/login', (loginRequest,loginResponse)=>{
     const userName = loginRequest.body.userName;
     const password = loginRequest.body.password;
 
     if(userName == "callme@byui.edu" && password  == "M@ckB00k"){
-        loginResponce.status(200);
-        loginResponce.send({status:"Welcome your nightmare begins"});
+        loginResponse.status(200);
+        loginResponse.send({status:"Welcome your nightmare begins"});
     } else {
-        loginResponce.status(403);
-        loginResponce.send({status:"Get YOTE YOLO LOL"})
+        loginResponse.status(403);
+        loginResponse.send({status:"Get YOTE YOLO LOL"})
     }
 });
 
